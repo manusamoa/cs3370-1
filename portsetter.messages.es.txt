@@ -1,0 +1,7 @@
+Autor: Joel Johnson
+Clase: cs3370
+Error
+Argumento no válido
+Número no válido de argumentos
+Conectado al puerto
+Número de puerto no válido

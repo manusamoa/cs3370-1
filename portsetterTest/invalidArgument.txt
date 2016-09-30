@@ -1,0 +1,14 @@
+Error: Invalid Argument
+Usage: portsetter.cpp.o  [-] h --help | p --port [PORTNUMBER]
+
+NULL, -h, --help
+	Displays the usage info
+
+-p, --port PORTNUMBER
+	connects to port specified in PORTNUMBER
+
+Exit status: 
+	0	OK
+	1	Invalid Port Number
+	2	Invalid Number of Arguments
+	3	Invalid Argument
