@@ -1,6 +1,6 @@
-ReadMe for portsetter command line utility
+__ReadMe for portsetter command line utility__
 
-Steps for setup
+_Steps for setup_
 1. compile both portsetter.cpp and test.cpp
 2. type `./setup` into a bash shell
 3. To run portsetter simply type `setport` followed by desired commands
