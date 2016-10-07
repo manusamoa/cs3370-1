@@ -143,7 +143,6 @@ int main(int argc, char* args[]) {
         return 0;
     }
     
-    
     //now take care of the port flag
     if(flag_type == PORT_FLAG) {
         if(argc < 3) {
@@ -181,7 +180,6 @@ int main(int argc, char* args[]) {
             error(MESSAGES[M_INVALID_PORT_NUMBER]);
             return INVALID_PORT;
         }
-        
     }
 }
 

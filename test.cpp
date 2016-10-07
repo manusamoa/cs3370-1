@@ -41,6 +41,7 @@ int main() {
     //Run Successful Tests
     totalFailedTests += printTestResult("No parameters prints usage and returns 0", runTest("",0,"portsetterTest/usageSuccess.txt"));
     totalFailedTests += printTestResult("'-h' argument prints usage and returns 0", runTest("-h",0,"portsetterTest/usageSuccess.txt"));
+<<<<<<< HEAD
     totalFailedTests += printTestResult("'-?' argument prints usage and returns 0", runTest("-h",0,"portsetterTest/usageSuccess.txt"));
     totalFailedTests += printTestResult("'--help' argument prints usage and returns 0", runTest("--help",0,"portsetterTest/usageSuccess.txt"));
     totalFailedTests += printTestResult("'-p 4040' listens on port 4040 and returns 0", runTest("-p 4040",0,"portsetterTest/portSuccess.txt"));
@@ -54,6 +55,11 @@ int main() {
     totalFailedTests += printTestResult("'-p -e CUSTOMPORT' argument connects on env variable CUSTOM_PORT and returns 0",runTest("-p -e CUSTOMPORT",0,"portsetterTest/portSuccess.txt"));
     
     
+=======
+    totalFailedTests += printTestResult("'--help' argument prints usage and returns 0", runTest("--help",0,"portsetterTest/usageSuccess.txt"));
+    totalFailedTests += printTestResult("'-p 4040' listens on port 4040 and returns 0", runTest("-p 4040",0,"portsetterTest/portSuccess.txt"));
+    totalFailedTests += printTestResult("'--port 4040' listens on port 4040 and returns 0", runTest("--port 4040",0,"portsetterTest/portSuccess.txt"));
+>>>>>>> 1ed1ed03467e65e57246c7a43b52ca90a227fb47
     
     //Run Error Catching Tests
     totalFailedTests += printTestResult("'help' argument should triggger invalid argument error and return 3", runTest("help",3,"portsetterTest/invalidArgument.txt"));
@@ -69,6 +75,7 @@ int main() {
     totalFailedTests += printTestResult("'-x 45321' arguments should trigger invalid argument error and return 3", runTest("-x 45321",3,"portsetterTest/invalidArgument.txt"));
     totalFailedTests += printTestResult("'-P 714' arguments should trigger invalid argument error and return 3", runTest("-P 714",3,"portsetterTest/invalidArgument.txt"));
     
+<<<<<<< HEAD
     //Run Spanish Tests
     setenv("LANG","es",1);
     
@@ -81,6 +88,8 @@ int main() {
     setenv("LANG","C",1);
     
     
+=======
+>>>>>>> 1ed1ed03467e65e57246c7a43b52ca90a227fb47
     
     
     cout << "\nTotal Failed Tests: "  << totalFailedTests << endl;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Error: Invalid number of arguments
 Usage: portsetter.cpp.o  [-] h ? --help | ! --about | v --version | p --port [-e] [environment variable] [PORTNUMBER]
 
@@ -18,3 +19,19 @@ Exit status:
     1   Invalid Port Number
     2   Invalid Number of Arguments
     3   Invalid Argument
+=======
+Error: Invalid Number of Arguments
+Usage: portsetter.cpp.o  [-] h --help | p --port [PORTNUMBER]
+
+NULL, -h, --help
+	Displays the usage info
+
+-p, --port PORTNUMBER
+	connects to port specified in PORTNUMBER
+
+Exit status: 
+	0	OK
+	1	Invalid Port Number
+	2	Invalid Number of Arguments
+	3	Invalid Argument
+>>>>>>> 1ed1ed03467e65e57246c7a43b52ca90a227fb47
