@@ -1,0 +1,20 @@
+Error: Número no válido de argumentos
+Uso: portsetter.cpp.o  [-] h ? --help | ! --about | v --version | p --port [-e] [environment variable] [PORTNUMBER]
+
+NULL, -h, -?, --help
+    Muestra la información de uso
+    
+-p, --port PORTNUMBER | -e [Environment Variable]
+    Se conecta al puerto especificado en PORTNUMBER, si el -e bandera se proporciona en lugar de PORTNUMBER a continuación, la variable de entorno PORT se utiliza a menos que se especifique otra variable.
+
+-!, --about
+    Muestra la información de autor
+
+-v, --version
+    Muestra el número de versión
+    
+El estado de salida:
+    0   DE ACUERDO
+    1   Número de puerto no válido
+    2   Inválida número de argumentos
+    3   Argumento no válido

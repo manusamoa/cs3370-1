@@ -1,0 +1,20 @@
+Error: Invalid Argument
+Usage: portsetter.cpp.o  [-] h ? --help | ! --about | v --version | p --port [-e] [environment variable] [PORTNUMBER]
+
+NULL, -h, -?, --help
+    Displays the usage info
+    
+-p, --port PORTNUMBER | -e [Environment Variable]
+    Connects to port specified in PORTNUMBER, if the -e flag is provided instead of PORTNUMBER then the environment variable PORT is used unless another variable is specified.
+
+-!, --about
+    Displays author information
+
+-v, --version
+    Displays version number
+    
+Exit status:
+    0   OK
+    1   Invalid Port Number
+    2   Invalid Number of Arguments
+    3   Invalid Argument

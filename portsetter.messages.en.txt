@@ -1,0 +1,7 @@
+Author: Joel Johnson
+Class: cs3370
+Error
+Invalid Argument
+Invalid number of arguments
+Connected to Port
+Invalid Port Number
