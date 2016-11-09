@@ -51,7 +51,11 @@ int main() {
     totalFailedTests += printTestResult("'--about' argument prints about information and returns 0",runTest("--about",0,"portsetterTest/aboutSuccess.txt"));
     
     setenv("CUSTOMPORT","4040",0);
+    setenv("BAR","3116",0);
+    setenv("PORT","3114",0);
     totalFailedTests += printTestResult("'-p -e CUSTOMPORT' argument connects on env variable CUSTOM_PORT and returns 0",runTest("-p -e CUSTOMPORT",0,"portsetterTest/portSuccess.txt"));
+    totalFailedTests += printTestResult("'-p --environment BAR' argument connects on env variable BAR and returns 0",runTest("-p --environment BAR",0,"portsetterTest/portSuccess.txt"));
+    totalFailedTests += printTestResult("'-p --environment' argument connects on env variable PORT and returns 0",runTest("-p --environment",0,"portsetterTest/portSuccess.txt"));
     
     //Run Error Catching Tests
     totalFailedTests += printTestResult("'help' argument should triggger invalid argument error and return 3", runTest("help",3,"portsetterTest/invalidArgument.txt"));

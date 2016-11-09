@@ -155,13 +155,17 @@ int main(int argc, char* args[]) {
         
         
         //is the -e flag set? if so then set portString to the port in the env
-        if(portString == "-e"){
+        if(portString == "-e" || portString == "--environment"){
             if (argc > 4) {
                error(MESSAGES[M_INVLAID_NUM_ARGS]);
                return INVALID_ARG_NUM;
             }
             char* PORT_VAR = (char*)"PORT";
             if (argc == 4) PORT_VAR = args[3];
+            // char* envPort = getenv(PORT_VAR);
+            // cout << "var: " << PORT_VAR << "=";
+            // if (envPort)
+            //     cout << envPort << endl;
             portString = getenv(PORT_VAR);
         }// end if
         else {

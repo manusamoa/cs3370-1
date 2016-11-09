@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "#!/bin/bash" >> setport
-echo "~/workspace/portsetter/portsetter.cpp.o \$*" >> setport
+echo "~/workspace/Portsetter-Joel/cs3370-1/portsetter.cpp.o \$*" >> setport
 chmod u+x setport
 sudo mv setport /bin/
 

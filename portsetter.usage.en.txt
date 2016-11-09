@@ -1,4 +1,4 @@
-Usage: portsetter.cpp.o  [-] h ? --help | ! --about | v --version | p --port [-e] [environment variable] [PORTNUMBER]
+Usage: portsetter.cpp.o  [-] h ? --help | ! --about | v --version | p --port [-e or --environment] [environment variable] [PORTNUMBER]
 
 NULL, -h, -?, --help
     Displays the usage info
